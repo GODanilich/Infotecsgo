@@ -3,7 +3,11 @@
 
 Можно запустить напрямую: go run ./main.go
 
-Для автоматизированной сборки и запуска Docker контейнера под Windows - запустить CrateAndRunContainer.bat
+### Для автоматизированной сборки и запуска Docker контейнера под Windows
+Запустить CrateAndRunContainer.bat
+
+### Для автоматизированной сборки и запуска Docker контейнера под Linux 
+Выполнить команду chmod +x CreateAndRunContainer.sh и запустить CrateAndRunContainer.sh 
 
 ## Использование
 
@@ -29,3 +33,6 @@ curl -X POST http://localhost:8080/api/send -H "Content-Type: application/json" 
 
 #### Windows CMD
 Необходимо экранирование внутренних ", так как cmd не поддерживает ', ' заменить на "
+
+## Состояние БД
+Состояние БД можно посмотреть через SQLite DB Browser
