@@ -28,4 +28,4 @@ curl -X POST http://localhost:8080/api/send -H "Content-Type: application/json" 
 curl -X POST http://localhost:8080/api/send -H "Content-Type: application/json" -d '{"from": "c63cfd3ba7bfa7b3eb1738c0a08f855c076c12ab661438563cd9eb810874ff20", "to": "62156e28841b1738e53a66e44e2c2e62164de66971ae79308d53c51ea9c0e3a4", "amount": 3.50}'
 
 #### Windows CMD
-curl -X POST http://localhost:8080/api/send -H "Content-Type: application/json" -d "{\"from\": \"c63cfd3ba7bfa7b3eb1738c0a08f855c076c12ab661438563cd9eb810874ff20\", \"to\": \"62156e28841b1738e53a66e44e2c2e62164de66971ae79308d53c51ea9c0e3a4\", \"amount\": 3.50}"
+Необходимо экранирование внутренних ", так как cmd не поддерживает ', ' заменить на "
